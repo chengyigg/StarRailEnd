@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2919d564c6e8d2742b75671b02ee49d0, type: 3}
+  m_Name: "\u7F3A\u5E2D"
+  m_EditorClassIdentifier: 
+  sequenceID: "\u7F3A\u5E2D"
+  nextSequenceID: "\u6DF1\u591C\u7684\u65E7\u9986"
+  lines:
+  - speakerName: 
+    textContent: "\u4F60\u628A\u7EB8\u6761\u63C9\u6210\u4E00\u56E2\uFF0C\u6254\u8FDB\u62BD\u5C49\u3002"
+    speakerAvatar: {fileID: 0}
+    background: {fileID: 21300000, guid: a0cacf4bb4454c3498a08ad59c05ebb5, type: 3}
+    speakerPortrait: {fileID: 0}
+    portraitPos: 0
+    choices: []
+  - speakerName: 
+    textContent: "\u8EBA\u5728\u5E8A\u4E0A\uFF0C\u7FFB\u6765\u8986\u53BB\u3002"
+    speakerAvatar: {fileID: 0}
+    background: {fileID: 21300000, guid: a0cacf4bb4454c3498a08ad59c05ebb5, type: 3}
+    speakerPortrait: {fileID: 0}
+    portraitPos: 0
+    choices: []
+  - speakerName: "\uFF08\u5185\u5FC3\uFF09"
+    textContent: "\u4E0D\u5173\u6211\u7684\u4E8B\u3002"
+    speakerAvatar: {fileID: 0}
+    background: {fileID: 21300000, guid: a0cacf4bb4454c3498a08ad59c05ebb5, type: 3}
+    speakerPortrait: {fileID: 0}
+    portraitPos: 0
+    choices: []
+  - speakerName: "\uFF08\u5185\u5FC3\uFF09"
+    textContent: "\u6211\u624D\u8F6C\u6765\u7B2C\u4E8C\u5929\u3002"
+    speakerAvatar: {fileID: 0}
+    background: {fileID: 21300000, guid: a0cacf4bb4454c3498a08ad59c05ebb5, type: 3}
+    speakerPortrait: {fileID: 0}
+    portraitPos: 0
+    choices: []
+  - speakerName: 
+    textContent: "\u5899\u4E0A\u7684\u949F\u8D70\u5230\u5341\u4E00\u70B9\u3002"
+    speakerAvatar: {fileID: 0}
+    background: {fileID: 21300000, guid: a0cacf4bb4454c3498a08ad59c05ebb5, type: 3}
+    speakerPortrait: {fileID: 0}
+    portraitPos: 0
+    choices: []
+  - speakerName: 
+    textContent: "\u4F60\u8FD8\u662F\u722C\u4E86\u8D77\u6765\u3002"
+    speakerAvatar: {fileID: 0}
+    background: {fileID: 21300000, guid: a0cacf4bb4454c3498a08ad59c05ebb5, type: 3}
+    speakerPortrait: {fileID: 0}
+    portraitPos: 0
+    choices: []
+  affectionCharacter: 
+  affectionDelta: 0
+  unlockCharacter: 
+  chapterTitle: 
+  setVariableName: 
+  setVariableValue: 0
+  conditionalNexts: []

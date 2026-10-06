@@ -1,0 +1,167 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2919d564c6e8d2742b75671b02ee49d0, type: 3}
+  m_Name: "\u96E8\u591C"
+  m_EditorClassIdentifier: 
+  sequenceID: "\u96E8\u591C"
+  nextSequenceID: "\u8FFD"
+  lines:
+  - speakerName: 
+    textContent: "\u4ECE\u5854\u91CC\u51FA\u6765\u65F6\uFF0C\u4E0B\u8D77\u4E86\u96E8\u3002"
+    speakerAvatar: {fileID: 0}
+    background: {fileID: 21300000, guid: 6734acf9bb928f54fa8d74416542a9f3, type: 3}
+    speakerPortrait: {fileID: 0}
+    portraitPos: 0
+    choices: []
+  - speakerName: 
+    textContent: "\u4E24\u4E2A\u4EBA\u6324\u5728\u4E00\u628A\u4F1E\u4E0B\uFF0C\u8C01\u90FD\u6CA1\u8BF4\u8BDD\u3002"
+    speakerAvatar: {fileID: 0}
+    background: {fileID: 21300000, guid: 6734acf9bb928f54fa8d74416542a9f3, type: 3}
+    speakerPortrait: {fileID: 0}
+    portraitPos: 0
+    choices: []
+  - speakerName: "\u82CF\u665A"
+    textContent: "\u8C22\u8C22\u4F60\u966A\u6211\u3002"
+    speakerAvatar: {fileID: 21300000, guid: 850bf9d167b41a643b22f852e26731f4, type: 3}
+    background: {fileID: 21300000, guid: 6734acf9bb928f54fa8d74416542a9f3, type: 3}
+    speakerPortrait: {fileID: 21300000, guid: 7162e294efb43f54f87a8da834d1de05, type: 3}
+    portraitPos: 1
+    choices: []
+  - speakerName: '{playerName}'
+    textContent: "\u8FD8\u6CA1\u627E\u5230\u4EBA\u5462\u3002"
+    speakerAvatar: {fileID: 0}
+    background: {fileID: 21300000, guid: 6734acf9bb928f54fa8d74416542a9f3, type: 3}
+    speakerPortrait: {fileID: 0}
+    portraitPos: 0
+    choices: []
+  - speakerName: "\u82CF\u665A"
+    textContent: "\u627E\u5230\u4E86\u4E00\u534A\u3002"
+    speakerAvatar: {fileID: 21300000, guid: 44267ba5eaf67c74cafcde27c04cd221, type: 3}
+    background: {fileID: 21300000, guid: 6734acf9bb928f54fa8d74416542a9f3, type: 3}
+    speakerPortrait: {fileID: 21300000, guid: c442779a863d5dd4ebcdc08114999e1b, type: 3}
+    portraitPos: 1
+    choices: []
+  - speakerName: "\uFF08\u5185\u5FC3\uFF09"
+    textContent: "\u4F1E\u5F88\u5C0F\uFF0C\u5979\u7684\u80A9\u8180\u4E00\u76F4\u662F\u6E7F\u7684\u3002"
+    speakerAvatar: {fileID: 0}
+    background: {fileID: 21300000, guid: 6734acf9bb928f54fa8d74416542a9f3, type: 3}
+    speakerPortrait: {fileID: 0}
+    portraitPos: 0
+    choices: []
+  - speakerName: 
+    textContent: "\u624B\u673A\u7A81\u7136\u54CD\u4E86\u3002"
+    speakerAvatar: {fileID: 0}
+    background: {fileID: 21300000, guid: 6734acf9bb928f54fa8d74416542a9f3, type: 3}
+    speakerPortrait: {fileID: 0}
+    portraitPos: 0
+    choices: []
+  - speakerName: 
+    textContent: "\u662F\u9646\u661F\u91CE\u3002"
+    speakerAvatar: {fileID: 0}
+    background: {fileID: 21300000, guid: 6734acf9bb928f54fa8d74416542a9f3, type: 3}
+    speakerPortrait: {fileID: 0}
+    portraitPos: 0
+    choices: []
+  - speakerName: "\u9646\u661F\u91CE"
+    textContent: "\u4F60\u4EEC\u5728\u54EA\u513F\uFF1F\uFF01"
+    speakerAvatar: {fileID: 21300000, guid: cba58f09584d5ac45aba252f49f65678, type: 3}
+    background: {fileID: 21300000, guid: 6734acf9bb928f54fa8d74416542a9f3, type: 3}
+    speakerPortrait: {fileID: 21300000, guid: 1dbe198b6fc762f41bfe722ef850c61d, type: 3}
+    portraitPos: 3
+    choices: []
+  - speakerName: "\u9646\u661F\u91CE"
+    textContent: "\u9648\u8001\u5E08\u521A\u624D\u88AB\u5E26\u8D70\u4E86\uFF01"
+    speakerAvatar: {fileID: 21300000, guid: cba58f09584d5ac45aba252f49f65678, type: 3}
+    background: {fileID: 21300000, guid: 6734acf9bb928f54fa8d74416542a9f3, type: 3}
+    speakerPortrait: {fileID: 21300000, guid: 1dbe198b6fc762f41bfe722ef850c61d, type: 3}
+    portraitPos: 3
+    choices: []
+  - speakerName: "\u82CF\u665A"
+    textContent: "\u4EC0\u4E48\uFF1F"
+    speakerAvatar: {fileID: 21300000, guid: 4200606f93ec59a4d9ee957e504b88a0, type: 3}
+    background: {fileID: 21300000, guid: 6734acf9bb928f54fa8d74416542a9f3, type: 3}
+    speakerPortrait: {fileID: 21300000, guid: c2b946455a6de8b46aa487bc9a317138, type: 3}
+    portraitPos: 1
+    choices: []
+  - speakerName: "\u9646\u661F\u91CE"
+    textContent: "\u6709\u4EBA\u4E3E\u62A5\u4ED6\u79C1\u81EA\u5F00\u653E\u65E7\u9986\u3002"
+    speakerAvatar: {fileID: 21300000, guid: cba58f09584d5ac45aba252f49f65678, type: 3}
+    background: {fileID: 21300000, guid: 6734acf9bb928f54fa8d74416542a9f3, type: 3}
+    speakerPortrait: {fileID: 21300000, guid: 1dbe198b6fc762f41bfe722ef850c61d, type: 3}
+    portraitPos: 3
+    choices: []
+  - speakerName: "\u9646\u661F\u91CE"
+    textContent: "\u8FD8\u8BF4\u4ED6\u5728\u9500\u6BC1\u706B\u707E\u7684\u6863\u6848\u3002"
+    speakerAvatar: {fileID: 21300000, guid: cba58f09584d5ac45aba252f49f65678, type: 3}
+    background: {fileID: 21300000, guid: 6734acf9bb928f54fa8d74416542a9f3, type: 3}
+    speakerPortrait: {fileID: 21300000, guid: 1dbe198b6fc762f41bfe722ef850c61d, type: 3}
+    portraitPos: 3
+    choices: []
+  - speakerName: 
+    textContent: "\u82CF\u665A\u7684\u624B\u6296\u4E86\u4E00\u4E0B\uFF0C\u4F1E\u6B6A\u4E86\u3002"
+    speakerAvatar: {fileID: 0}
+    background: {fileID: 21300000, guid: 6734acf9bb928f54fa8d74416542a9f3, type: 3}
+    speakerPortrait: {fileID: 0}
+    portraitPos: 0
+    choices: []
+  - speakerName: "\u82CF\u665A"
+    textContent: "\u2026\u2026\u662F\u6211\u5BB3\u4E86\u4ED6\u3002"
+    speakerAvatar: {fileID: 21300000, guid: bb9af44bf030f474da0d8c2cc5b17cce, type: 3}
+    background: {fileID: 21300000, guid: 6734acf9bb928f54fa8d74416542a9f3, type: 3}
+    speakerPortrait: {fileID: 21300000, guid: 6467f88074117ee48a49e858f3be50f3, type: 3}
+    portraitPos: 1
+    choices: []
+  - speakerName: '{playerName}'
+    textContent: "\u4E0D\u662F\u4F60\u3002"
+    speakerAvatar: {fileID: 0}
+    background: {fileID: 21300000, guid: 6734acf9bb928f54fa8d74416542a9f3, type: 3}
+    speakerPortrait: {fileID: 0}
+    portraitPos: 0
+    choices: []
+  - speakerName: "\u82CF\u665A"
+    textContent: "\u662F\u6211\u3002"
+    speakerAvatar: {fileID: 21300000, guid: bb9af44bf030f474da0d8c2cc5b17cce, type: 3}
+    background: {fileID: 21300000, guid: 6734acf9bb928f54fa8d74416542a9f3, type: 3}
+    speakerPortrait: {fileID: 21300000, guid: 6467f88074117ee48a49e858f3be50f3, type: 3}
+    portraitPos: 1
+    choices: []
+  - speakerName: 
+    textContent: "\u5979\u51B2\u8FDB\u96E8\u91CC\uFF0C\u8DD1\u5F97\u5F88\u5FEB\u3002"
+    speakerAvatar: {fileID: 0}
+    background: {fileID: 21300000, guid: 6734acf9bb928f54fa8d74416542a9f3, type: 3}
+    speakerPortrait: {fileID: 0}
+    portraitPos: 0
+    choices:
+    - choiceText: "\u8FFD\u4E0A\u53BB"
+      nextSequenceID: "\u8FFD"
+      condition: 0
+      variableName: 
+      variableValue: 0
+      hideWhenUnmet: 1
+      affectionCharacter: "\u82CF\u665A"
+      affectionDelta: 15
+    - choiceText: "\u5148\u8054\u7CFB\u9646\u661F\u91CE\u95EE\u6E05\u695A"
+      nextSequenceID: "\u8FFD"
+      condition: 0
+      variableName: 
+      variableValue: 0
+      hideWhenUnmet: 1
+      affectionCharacter: "\u82CF\u665A"
+      affectionDelta: 5
+  affectionCharacter: 
+  affectionDelta: 0
+  unlockCharacter: 
+  chapterTitle: 
+  bgmName: bgm_emotional
+  setVariableName: 
+  setVariableValue: 0
+  conditionalNexts: []

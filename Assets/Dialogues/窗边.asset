@@ -1,0 +1,94 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2919d564c6e8d2742b75671b02ee49d0, type: 3}
+  m_Name: "\u7A97\u8FB9"
+  m_EditorClassIdentifier: 
+  sequenceID: "\u7A97\u8FB9"
+  nextSequenceID: "\u8D70\u5ECA"
+  lines:
+  - speakerName: '{playerName}'
+    textContent: "\u4F60\u597D\uFF0C\u6211\u662F\u4ECA\u5929\u8F6C\u6765\u7684\u3002"
+    speakerAvatar: {fileID: 0}
+    background: {fileID: 21300000, guid: 8e1830122eaa57a4f883dcd00909e063, type: 3}
+    speakerPortrait: {fileID: 0}
+    portraitPos: 0
+    choices: []
+  - speakerName: "\u82CF\u665A"
+    textContent: "\uFF08\u62AC\u5934\uFF09\u2026\u2026\u55EF\u3002\u82CF\u665A\u3002"
+    speakerAvatar: {fileID: 21300000, guid: 850bf9d167b41a643b22f852e26731f4, type: 3}
+    background: {fileID: 21300000, guid: 8e1830122eaa57a4f883dcd00909e063, type: 3}
+    speakerPortrait: {fileID: 21300000, guid: 7162e294efb43f54f87a8da834d1de05, type: 3}
+    portraitPos: 1
+    choices: []
+  - speakerName: "\u9646\u661F\u91CE"
+    textContent: "\u54C7\uFF0C\u5979\u5C45\u7136\u62A5\u540D\u5B57\u4E86\uFF01"
+    speakerAvatar: {fileID: 21300000, guid: 456d3aa5274d0e04ea74ab50c1a7d53a, type: 3}
+    background: {fileID: 21300000, guid: 8e1830122eaa57a4f883dcd00909e063, type: 3}
+    speakerPortrait: {fileID: 21300000, guid: 5a15f6a23b98d984c9a4334f57d7f342, type: 3}
+    portraitPos: 3
+    choices: []
+  - speakerName: "\u82CF\u665A"
+    textContent: "\u4F60\u95ED\u5634\u3002"
+    speakerAvatar: {fileID: 21300000, guid: 1934155033802a249bcaa9653fe35d1a, type: 3}
+    background: {fileID: 21300000, guid: 8e1830122eaa57a4f883dcd00909e063, type: 3}
+    speakerPortrait: {fileID: 21300000, guid: f88a182d9431c4b43859eaaafecb41d6, type: 3}
+    portraitPos: 1
+    choices: []
+  - speakerName: "\uFF08\u5185\u5FC3\uFF09"
+    textContent: "\u5979\u7684\u773C\u775B\u5F88\u4EAE\uFF0C\u50CF\u5728\u770B\u5F88\u8FDC\u7684\u5730\u65B9\u3002"
+    speakerAvatar: {fileID: 0}
+    background: {fileID: 21300000, guid: 8e1830122eaa57a4f883dcd00909e063, type: 3}
+    speakerPortrait: {fileID: 0}
+    portraitPos: 0
+    choices: []
+  - speakerName: "\u82CF\u665A"
+    textContent: "\u4F60\u5750\u7A97\u8FB9\u5427\uFF0C\u90A3\u8FB9\u7684\u5149\u6BD4\u8F83\u597D\u3002"
+    speakerAvatar: {fileID: 21300000, guid: 850bf9d167b41a643b22f852e26731f4, type: 3}
+    background: {fileID: 21300000, guid: 8e1830122eaa57a4f883dcd00909e063, type: 3}
+    speakerPortrait: {fileID: 21300000, guid: 7162e294efb43f54f87a8da834d1de05, type: 3}
+    portraitPos: 1
+    choices: []
+  - speakerName: '{playerName}'
+    textContent: "\u8C22\u8C22\u3002"
+    speakerAvatar: {fileID: 0}
+    background: {fileID: 21300000, guid: 8e1830122eaa57a4f883dcd00909e063, type: 3}
+    speakerPortrait: {fileID: 0}
+    portraitPos: 0
+    choices: []
+  - speakerName: "\u82CF\u665A"
+    textContent: "\u4E0D\u7528\u8C22\u3002\u6211\u53EA\u662F\u4E0D\u60F3\u6709\u4EBA\u6321\u5149\u3002"
+    speakerAvatar: {fileID: 21300000, guid: 850bf9d167b41a643b22f852e26731f4, type: 3}
+    background: {fileID: 21300000, guid: 8e1830122eaa57a4f883dcd00909e063, type: 3}
+    speakerPortrait: {fileID: 21300000, guid: 7162e294efb43f54f87a8da834d1de05, type: 3}
+    portraitPos: 1
+    choices: []
+  - speakerName: 
+    textContent: "\u5979\u4F4E\u4E0B\u5934\uFF0C\u7EE7\u7EED\u63E1\u90A3\u652F\u4E0D\u52A8\u7684\u7B14\u3002"
+    speakerAvatar: {fileID: 0}
+    background: {fileID: 21300000, guid: 8e1830122eaa57a4f883dcd00909e063, type: 3}
+    speakerPortrait: {fileID: 0}
+    portraitPos: 0
+    choices: []
+  - speakerName: 
+    textContent: "\u9646\u661F\u91CE\u51B2\u4F60\u6BD4\u4E86\u4E2A\"\u5389\u5BB3\"\u7684\u53E3\u578B\u3002"
+    speakerAvatar: {fileID: 0}
+    background: {fileID: 21300000, guid: 8e1830122eaa57a4f883dcd00909e063, type: 3}
+    speakerPortrait: {fileID: 0}
+    portraitPos: 0
+    choices: []
+  affectionCharacter: 
+  affectionDelta: 0
+  unlockCharacter: 
+  chapterTitle: 
+  setVariableName: 
+  setVariableValue: 0
+  conditionalNexts: []

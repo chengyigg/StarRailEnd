@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2919d564c6e8d2742b75671b02ee49d0, type: 3}
+  m_Name: "\u7B2C\u4E00\u7AE0\u7ED3\u675F"
+  m_EditorClassIdentifier: 
+  sequenceID: "\u7B2C\u4E00\u7AE0\u7ED3\u675F"
+  nextSequenceID: "\u591C\u81EA\u4E60"
+  lines:
+  - speakerName: 
+    textContent: "\u7B2C\u4E00\u7AE0\u7ED3\u675F\u3002"
+    speakerAvatar: {fileID: 0}
+    background: {fileID: 21300000, guid: 8e1830122eaa57a4f883dcd00909e063, type: 3}
+    speakerPortrait: {fileID: 0}
+    portraitPos: 0
+    choices: []
+  - speakerName: 
+    textContent: "\u4F46\u6545\u4E8B\uFF0C\u624D\u521A\u521A\u5F00\u59CB\u3002"
+    speakerAvatar: {fileID: 0}
+    background: {fileID: 21300000, guid: 8e1830122eaa57a4f883dcd00909e063, type: 3}
+    speakerPortrait: {fileID: 0}
+    portraitPos: 0
+    choices: []
+  affectionCharacter: 
+  affectionDelta: 0
+  unlockCharacter: 
+  chapterTitle: 
+  setVariableName: 
+  setVariableValue: 0
+  conditionalNexts: []
