@@ -3,6 +3,8 @@
 > 一个用 Unity 一周完成的 2D 文字冒险 AVG —— 数据驱动的对话系统 + 多结局分支 + 完整存档体验。
 
 🎬 **[观看 1 分半完整演示视频（B 站）](https://www.bilibili.com/video/BV1nHpA6NEJA)**
+
+📦 **[下载可玩版本（Windows，127 MB）](https://github.com/chengyigg/StarRailEnd/releases/tag/v1.0
 ---
 
 ## 项目简介
