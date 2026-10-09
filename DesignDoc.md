@@ -83,145 +83,68 @@
 
 
 
-\## 二、系统架构
+## 二、系统架构
 
+### 2.1 整体架构图
 
+```mermaid
+graph TD
+    Manager["DialogueManager<br/>（核心）<br/>推进 / 跳转 / 结局判定 / 存档触发"]
 
-\### 2.1 整体架构图
+    Manager -->|Play| Typewriter["TypewriterEffect<br/>打字机效果"]
+    Manager -->|Show| Choice["DialogueChoiceView<br/>选项按钮"]
+    Manager -->|EnsureEntryAt| History["DialogueHistoryPanel<br/>历史记录"]
+    Manager -->|Show| Portrait["DialoguePortraitView<br/>立绘显示"]
+    Manager -->|ShowBackground| Background["DialogueBackgroundView<br/>背景切换 + 独白滤镜"]
+    Manager -->|公开方法| Keyboard["DialogueKeyboard<br/>键盘输入"]
 
+    Typewriter -.->|OnFinished| Manager
+    Choice -.->|OnChoiceClicked| Manager
 
-
+    style Manager fill:#4A90E2,stroke:#2E5C8A,color:#fff
+    style Typewriter fill:#F5D76E,stroke:#B8A245
+    style Choice fill:#7ED321,stroke:#5FA018
+    style History fill:#F5A9BC,stroke:#B87A8B
+    style Portrait fill:#9B59B6,stroke:#6D3D82,color:#fff
+    style Background fill:#5DCFD8,stroke:#3A8B92
+    style Keyboard fill:#F39C12,stroke:#B87010,color:#fff
 ```
 
-┌─────────────────────────────────────────────────────────┐
+### 2.2 架构设计原则
 
-│                      游戏主流程                            │
-
-│                                                          │
-
-│   MainMenu ──→ Game 场景 ──→ 对话系统 ──→ 结局           │
-
-└─────────────────────────────────────────────────────────┘
-
-&#x20;                           │
-
-&#x20;                           ▼
-
-┌─────────────────────────────────────────────────────────┐
-
-│                   DialogueManager（核心）                  │
-
-│  职责：推进对话流程、序列跳转、结局判定、存档触发              │
-
-│                                                          │
-
-│  · 拥有 currentLineIndex（当前行索引）                     │
-
-│  · 拥有 dialogueData（当前对话序列）                       │
-
-│  · 暴露 NextLine() / JumpToSequence() / LoadFromSave()    │
-
-└────┬────────┬────────┬────────┬────────┬────────┬───────┘
-
-&#x20;    │        │        │        │        │        │
-
-&#x20;    ▼        ▼        ▼        ▼        ▼        ▼
-
-┌────────┐┌────────┐┌────────┐┌────────┐┌────────┐┌────────┐
-
-│Typewrit││Choice  ││History ││Portrait││Backgrnd││Keyboard│
-
-│erEffect││View    ││Panel   ││View    ││View    ││        │
-
-├────────┤├────────┤├────────┤├────────┤├────────┤├────────┤
-
-│打字机   ││选项按钮 ││历史记录 ││立绘淡入 ││背景切换 ││键盘输入 │
-
-│效果     ││生成+分发││         ││/移动    ││+独白滤镜││Ctrl/Esc│
-
-└────────┘└────────┘└────────┘└────────┘└────────┘└────────┘
-
-&#x20;    ▲        ▲        ▲        ▲        ▲        ▲
-
-&#x20;    └────────┴────────┴────────┴────────┴────────┴───────┘
-
-&#x20;                  通过事件 + 公开方法通信
-
-```
-
-
-
-\### 2.2 架构设计原则
-
-
-
-\*\*核心思想\*\*：`DialogueManager` 只负责"剧情走到哪了"，其他所有"怎么显示"的活都交给独立组件。
-
-
+**核心思想**：`DialogueManager` 只负责"剧情走到哪了"，其他所有"怎么显示"的活都交给独立组件。
 
 | 组件 | 职责 | 与 Manager 的交互方式 |
-
 |---|---|---|
-
 | `TypewriterEffect` | 逐字显示文本 | Manager 调用 `Play()`，完成后触发 `OnFinished` 事件 |
-
 | `DialogueChoiceView` | 生成选项按钮 | Manager 调用 `Show()`，点击时触发 `OnChoiceClicked` 事件 |
-
 | `DialogueHistoryPanel` | 历史记录 | Manager 调用 `EnsureEntryAt()` / `Toggle()` |
-
 | `DialoguePortraitView` | 立绘显示 | Manager 调用 `Show(sprite, pos)` |
-
 | `DialogueBackgroundView` | 背景切换 | Manager 调用 `ShowBackground()` / `SetMonologueMode()` |
-
 | `DialogueKeyboard` | 键盘输入 | 独立监听 Input，反向调用 Manager 的公开方法 |
 
-
-
-\### 2.3 分层结构
-
-
+### 2.3 分层结构
 
 ```
-
 Assets/
-
 ├── Scripts/
-
 │   ├── Core/          引擎基础设施（AudioManager、GameSettings、SceneFader…）
-
 │   ├── Data/          纯数据类（DialogueSequence、SaveData…）
-
 │   ├── Dialogue/      对话系统核心 + 6 个组件
-
 │   ├── Systems/       逻辑系统（SaveManager、AffectionManager…）
-
 │   ├── UI/
-
 │   │   ├── Panels/    大面板
-
 │   │   └── Widgets/   小部件
-
 │   └── Visual/
-
 │       ├── Animators/ 动画组件
-
 │       ├── Stylers/   样式组件
-
 │       └── Effects/   特效与程序化纹理
-
 ├── Editor/            8 个 Editor 工具
-
 ├── Dialogues/         24 个对话序列 .asset
-
 ├── Prefabs/           UI 预制体
-
 ├── Resources/         运行时加载资源
-
 └── Scenes/            SampleScene（主菜单） / Game（游戏）
-
 ```
-
-
 
 \---
 
